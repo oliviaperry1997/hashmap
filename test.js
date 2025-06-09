@@ -33,5 +33,6 @@ console.log(test.has("hat"));
 console.log(test.hashLength())
 console.log(test.buckets[28].size())
 
-test.clear();
-console.log(test.hashLength())
+console.log(test.keys());
+console.log(test.values());
+console.log(test.entries());
