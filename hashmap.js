@@ -63,6 +63,14 @@ export class HashMap {
         return totalLength;
     }
 
+    clear() {
+        for (let i=0; i<this.capacity; i++) {
+            while (this.buckets[i].length !== 0) {
+                this.buckets[i].removeAt(0);
+            }
+        }
+    }
+
     resize() {
         const oldBuckets = this.buckets;
         this.capacity *= 2;
