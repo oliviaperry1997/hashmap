@@ -25,3 +25,7 @@ console.log(test.capacity);
 
 console.log(test.has("elephant"));
 console.log(test.has("dragon"));
+
+console.log(test.has("hat"));
+test.remove("hat");
+console.log(test.has("hat"));

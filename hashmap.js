@@ -49,6 +49,12 @@ export class HashMap {
         return node ? true : false;
     }
 
+    remove(key) {
+        const index = this.hash(key);
+        const node = this.buckets[index]
+        node.removeByKey(key);
+    }
+
     resize() {
         const oldBuckets = this.buckets;
         this.capacity *= 2;
