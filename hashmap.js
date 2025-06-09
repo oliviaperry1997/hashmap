@@ -55,6 +55,14 @@ export class HashMap {
         node.removeByKey(key);
     }
 
+    hashLength() {
+        let totalLength = 0;
+        for (let i=0; i < this.capacity; i++) {
+            totalLength += this.buckets[i].length
+        }
+        return totalLength;
+    }
+
     resize() {
         const oldBuckets = this.buckets;
         this.capacity *= 2;

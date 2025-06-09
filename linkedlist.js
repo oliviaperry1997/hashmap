@@ -149,7 +149,6 @@ export class LinkedList {
             existingNode.value.value = value;
         } else {
             this.append({ key, value });
-            this.length++;
         }
     }
 

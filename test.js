@@ -29,3 +29,6 @@ console.log(test.has("dragon"));
 console.log(test.has("hat"));
 test.remove("hat");
 console.log(test.has("hat"));
+
+console.log(test.hashLength())
+console.log(test.buckets[28].size())
