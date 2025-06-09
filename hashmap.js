@@ -43,6 +43,12 @@ export class HashMap {
         return node ? node.value.value : undefined;
     }
 
+    has(key) {
+        const index = this.hash(key);
+        const node = this.buckets[index].findByKey(key);
+        return node ? true : false;
+    }
+
     resize() {
         const oldBuckets = this.buckets;
         this.capacity *= 2;

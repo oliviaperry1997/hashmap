@@ -23,4 +23,5 @@ console.log(test.capacity);
 test.set("moon", "silver");
 console.log(test.capacity);
 
-console.log(test)
+console.log(test.has("elephant"));
+console.log(test.has("dragon"));

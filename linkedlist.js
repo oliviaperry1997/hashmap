@@ -152,6 +152,18 @@ export class LinkedList {
             this.length++;
         }
     }
+
+    removeByKey(key) {
+        let current = this.head;
+        let index = 0
+        while (current) {
+            if (current.value.key === key) {
+                this.removeAt(index);
+            }
+            current = current.next;
+            index++;
+        }
+    }
 }
 
 class Node {
